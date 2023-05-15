@@ -135,9 +135,6 @@ dist/
 
 .tern-port
 
-# Publish File
-!dist
-
 # Develop File
 .husky
 src
