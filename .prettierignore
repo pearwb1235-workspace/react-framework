@@ -103,6 +103,7 @@ typings/
 # Nuxt.js build / generate output
 
 .nuxt
+dist/
 
 # Gatsby files
 
@@ -133,3 +134,19 @@ typings/
 # TernJS port file
 
 .tern-port
+
+# Publish File
+!dist
+
+# Develop File
+.husky
+src
+.babelrc.json
+.eslintrc.json
+.gitattributes
+.gitignore
+.lintstagedrc.json
+.prettierrc.json
+prepare.js
+tsconfig.json
+tsconfig.types.json
