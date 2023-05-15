@@ -49,20 +49,24 @@ module.exports = {
       },
     ],
   },
-  externals: {
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "React",
-      root: "React",
+  externals: [
+    {
+      react: {
+        commonjs: "react",
+        commonjs2: "react",
+        amd: "React",
+        root: "React",
+      },
+      "react-dom": {
+        commonjs: "react-dom",
+        commonjs2: "react-dom",
+        amd: "ReactDOM",
+        root: "ReactDOM",
+      },
     },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "ReactDOM",
-      root: "ReactDOM",
-    },
-  },
+    "@mui/material",
+    "react/jsx-runtime",
+  ],
   plugins: [new MiniCssExtractPlugin()],
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],

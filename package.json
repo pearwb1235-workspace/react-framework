@@ -1,11 +1,11 @@
 {
   "name": "@pearwb-private/react-frame",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The react framework for self",
   "main": "dist",
   "scripts": {
     "start": "webpack serve",
-    "build": "npm run build.compile && npm run build.types",
+    "build": "rimraf dist && npm run build.compile && npm run build.types",
     "build.compile": "webpack --mode production",
     "build.types": "tsc --project tsconfig.types.json && tsconfig-replace-paths -p tsconfig.types.json -s ./src -o ./dist",
     "test": "lint-staged",
