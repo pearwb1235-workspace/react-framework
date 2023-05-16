@@ -152,6 +152,7 @@ src
 prepare.js
 tsconfig.json
 tsconfig.types.json
+webpack.config.js
 
 # Docs
 docs/
