@@ -1,6 +1,6 @@
 {
   "name": "@pearwb-private/react-frame",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "The react framework for self",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
