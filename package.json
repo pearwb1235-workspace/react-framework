@@ -2,7 +2,8 @@
   "name": "@pearwb-private/react-frame",
   "version": "0.2.1",
   "description": "The react framework for self",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
   "scripts": {
     "start": "webpack serve",
     "build": "rimraf dist && npm run build.compile && npm run build.types",
