@@ -1,4 +1,6 @@
 const path = require("path");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -67,7 +69,7 @@ module.exports = {
     "@mui/material",
     "react/jsx-runtime",
   ],
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [new BundleAnalyzerPlugin(), new MiniCssExtractPlugin()],
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
